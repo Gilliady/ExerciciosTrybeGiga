@@ -1,0 +1,1 @@
+Aqui contém os exercícios executados no dia 01 da secao Introducao ao HTML & CSS.
