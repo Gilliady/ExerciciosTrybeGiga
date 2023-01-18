@@ -1,14 +1,8 @@
-h1, p
-{
-text-align: center;
+div:hover{
+  border: 1;
+  border-style:groove;
+  border-color: lightblue;
 }
-li:hover{
-  background-color: lightblue;
-}
-li:active{
-  font-family: sans-serif;
-}
-ul,ol
-{
-  list-style: none;
+div:first-of-type{
+  background-color: red;
 }
