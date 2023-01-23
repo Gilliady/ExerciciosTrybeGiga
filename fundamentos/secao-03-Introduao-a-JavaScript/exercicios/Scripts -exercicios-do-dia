@@ -1,7 +1,75 @@
-const a = 10, b = 3;
-
+const a = 45, b = 95, c = 40;
+const chessPiece = 'QuEeN';
+const grade = 46;
 console.log(a + b);
 console.log(a - b);
 console.log(a * b);
 console.log(a / b);
 console.log(a % b);
+
+if (a > b){
+  console.log(a + ' é maior que ' + b);
+}else {
+  console.log(b + ' é maior que ' + a);
+}
+
+if (a > b && a > c){
+  console.log(a + ' é o maior número'); 
+}else if(b > a && b > c) {
+  console.log(b + ' é o maior número');
+}else{
+  console.log(c + ' é o maior número');
+}
+
+if (a > 0){
+  console.log('positive');
+}else if (a < 0){
+  console.log('negative');
+}else if (a === 0){
+  console.log('zero');
+}
+
+if(a + b + c === 180){
+  console.log(true);
+}else{
+  console.log(false);
+}
+
+switch(chessPiece.toLowerCase()){
+  case 'pawn':
+    console.log('front diagonals 1 step only.');
+  break;
+  case 'tower':
+    console.log('straight lines');
+  break;
+  case 'horseman':
+    console.log('3 steps in L direction');
+  break;
+  case 'bishop':
+    console.log('diagonals')
+  break;
+  case 'queen':
+    console.log('diagonals and straight')
+  break;
+  case 'king':
+    console.log('diagonals and straight 1 step only');
+  break;
+  }
+  if(grade < 0 || grade > 100){
+    console.log('Invalid grade value.')
+  }else if(grade >= 90){
+    console.log('Grade: A');
+  }else if(grade >= 80 && grade < 90){
+    console.log('Grade: ');
+  }else if(grade >= 70 && grade < 80){
+    console.log('Grade: C');
+  }else if(grade >= 60 && grade < 70){
+    console.log('Grade: D');
+  }
+  else if(grade >= 50 && grade < 60){
+    console.log('Grade: E');
+  }else if(grade < 50){
+    console.log('Grade: F');
+  }
+
+  
