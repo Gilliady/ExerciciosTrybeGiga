@@ -24,3 +24,17 @@ for (let index = 0; index < array.length; index += 1) {
 }
 console.log(smallerWord);
 console.log(higherWord);
+let primeNumbers = [];
+
+for (let index = 2; index <= 50; index++) {
+  let isPrime = true;
+  for (let index2 = 2; index2 < index; index2++) {
+    if(index % index2 === 0){
+      isPrime = false;
+    }
+  }
+  if(isPrime === true){
+    primeNumbers.push(index);
+  }
+}
+console.log(primeNumbers[primeNumbers.length-1]);
