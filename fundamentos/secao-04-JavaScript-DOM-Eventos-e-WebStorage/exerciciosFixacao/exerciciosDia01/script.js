@@ -10,11 +10,11 @@ const secondParagraph = document.getElementById("second-paragraph");
 
 const paragraphs = document.getElementsByClassName('paragraphs');
 
-title.innerText = 'Baby Driver';
+title.innerHTML = 'Baby Driver';
 
 subTitle.innerText = 'Dirigindo e curtindo sonzera';
 
-subTitleByTag[0].style.color = 'pink';
+subTitleByTag[0].style.color = 'lightpink';
 for (let paragraph = 0; paragraph < paragraphs.length; paragraph++) {
   paragraphs[paragraph].style.color = 'green';  
 }
