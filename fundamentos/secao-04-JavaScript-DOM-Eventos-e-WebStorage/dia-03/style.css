@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+}
+button {
+  margin: 0;
+  width: 120px;
+}
+
+header {
+  background-color: white;
+  border: solid black 1px;
+  color: black;
+  display: inline-block;
+  font-family: initial;
+  line-height: initial;
+  font-size: initial;
+  width: 95%;
+}
+
+li {
+  list-style: none;
+}
+
+main {
+  
+}
+
+ul {
+  display: inline-block;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-top: 0;
+  padding-left: 0;
+  vertical-align:top;
+}
