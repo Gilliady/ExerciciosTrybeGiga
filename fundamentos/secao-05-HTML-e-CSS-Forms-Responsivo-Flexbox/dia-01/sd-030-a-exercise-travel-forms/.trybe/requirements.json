@@ -1,0 +1,52 @@
+{
+  "requirements": [
+    {
+      "bonus": false,
+      "description": "1 - Crie um título para seu formulário com a tag `h1`",
+      "enabled": true,
+      "identifier": null,
+      "order": 1,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "2 - Implemente o conteúdo do formulário `form`",
+      "enabled": true,
+      "identifier": null,
+      "order": 2,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "3 - Crie botões para o formulário `form`",
+      "enabled": true,
+      "identifier": null,
+      "order": 3,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "4 - Manipule as informações via javascript",
+      "enabled": true,
+      "identifier": null,
+      "order": 4,
+      "skill_ids": []
+    },
+    {
+      "bonus": true,
+      "description": "5 - Faça a validação de imagem ao clicar no checkbox correspondente.",
+      "enabled": true,
+      "identifier": null,
+      "order": 5,
+      "skill_ids": []
+    },
+    {
+      "bonus": true,
+      "description": "6 - Faça a validação dos campos do formulário.",
+      "enabled": true,
+      "identifier": null,
+      "order": 6,
+      "skill_ids": []
+    }
+  ]
+}
