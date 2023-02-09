@@ -1,0 +1,674 @@
+{
+  "stats": {
+    "suites": 7,
+    "tests": 22,
+    "passes": 10,
+    "pending": 0,
+    "failures": 12,
+    "start": "2023-02-08T21:15:28.531Z",
+    "end": "2023-02-08T21:17:24.598Z",
+    "duration": 116067,
+    "testsRegistered": 22,
+    "passPercent": 45.45454545454545,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8c0e7687-308d-4cfb-b955-4e4c1814f8dc",
+      "title": "",
+      "fullFile": "cypress/integration/project.spec.js",
+      "file": "cypress/integration/project.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "97dbacda-15ee-4b8d-8cab-23155e8412ba",
+          "title": "travel-form",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "c7a689ee-2f88-4f83-b8f2-e8a8f1a626e6",
+              "title": "1 - Crie um título para seu formulário com a tag `h1`",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "O título deve possuir a tag `h1` e o id `title`",
+                  "fullTitle": "travel-form 1 - Crie um título para seu formulário com a tag `h1` O título deve possuir a tag `h1` e o id `title`",
+                  "timedOut": null,
+                  "duration": 196,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(TRYBE_TRAVEL_TITLE).should('exist');",
+                  "err": {},
+                  "uuid": "4daeef6e-b43f-4ae6-8795-6304d1d2c62c",
+                  "parentUUID": "c7a689ee-2f88-4f83-b8f2-e8a8f1a626e6",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Verifica se o texto do título é \"Formulário Trybe Travel\"",
+                  "fullTitle": "travel-form 1 - Crie um título para seu formulário com a tag `h1` Verifica se o texto do título é \"Formulário Trybe Travel\"",
+                  "timedOut": null,
+                  "duration": 69,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(TRYBE_TRAVEL_TITLE).should('have.text', 'Formulário Trybe Travel');",
+                  "err": {},
+                  "uuid": "f5ab49ca-c18b-43e7-9b2b-90888ccfc2a7",
+                  "parentUUID": "c7a689ee-2f88-4f83-b8f2-e8a8f1a626e6",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "O formulário deve possuir o id `main-form`",
+                  "fullTitle": "travel-form 1 - Crie um título para seu formulário com a tag `h1` O formulário deve possuir o id `main-form`",
+                  "timedOut": null,
+                  "duration": 74,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(TRYBE_TRAVEL_FORM).should('exist');",
+                  "err": {},
+                  "uuid": "67117a90-d2d9-4b6d-b853-9b39996d5052",
+                  "parentUUID": "c7a689ee-2f88-4f83-b8f2-e8a8f1a626e6",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "4daeef6e-b43f-4ae6-8795-6304d1d2c62c",
+                "f5ab49ca-c18b-43e7-9b2b-90888ccfc2a7",
+                "67117a90-d2d9-4b6d-b853-9b39996d5052"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 339,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "8bf6de67-f320-4d2f-b188-f3630c029f37",
+              "title": "2 - Implemente o conteúdo do formulário `form`",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Existe um elemento com o id `fullName`",
+                  "fullTitle": "travel-form 2 - Implemente o conteúdo do formulário `form` Existe um elemento com o id `fullName`",
+                  "timedOut": null,
+                  "duration": 117,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(TRYBE_TRAVEL_NAME).should('exist');",
+                  "err": {},
+                  "uuid": "68902c3a-7c3a-4884-89b5-23efcfe60872",
+                  "parentUUID": "8bf6de67-f320-4d2f-b188-f3630c029f37",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Existe um elemento com o id `email`",
+                  "fullTitle": "travel-form 2 - Implemente o conteúdo do formulário `form` Existe um elemento com o id `email`",
+                  "timedOut": null,
+                  "duration": 83,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(TRYBE_TRAVEL_EMAIL).should('exist');",
+                  "err": {},
+                  "uuid": "ccdb82e6-0325-44ae-91a5-bc6813541294",
+                  "parentUUID": "8bf6de67-f320-4d2f-b188-f3630c029f37",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Existem quatro elementos com o name `destinations`",
+                  "fullTitle": "travel-form 2 - Implemente o conteúdo do formulário `form` Existem quatro elementos com o name `destinations`",
+                  "timedOut": null,
+                  "duration": 90,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(TRYBE_TRAVEL_FORM).find('[name=\"destinations\"]').its('length').should('be.gte', 4);",
+                  "err": {},
+                  "uuid": "3f2eab70-1e08-402f-8891-5411fb55e570",
+                  "parentUUID": "8bf6de67-f320-4d2f-b188-f3630c029f37",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Existe um elemento com o id `question`",
+                  "fullTitle": "travel-form 2 - Implemente o conteúdo do formulário `form` Existe um elemento com o id `question`",
+                  "timedOut": null,
+                  "duration": 73,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(TRYBE_TRAVEL_QUESTION).should('exist');",
+                  "err": {},
+                  "uuid": "02e31f0b-a30c-444c-a232-6c2511ed87cd",
+                  "parentUUID": "8bf6de67-f320-4d2f-b188-f3630c029f37",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Existe um elemento com o id `date`",
+                  "fullTitle": "travel-form 2 - Implemente o conteúdo do formulário `form` Existe um elemento com o id `date`",
+                  "timedOut": null,
+                  "duration": 63,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(TRYBE_INPUT_DATE).should('exist');",
+                  "err": {},
+                  "uuid": "e06a56e1-90be-4fca-a49f-0338d0e96e49",
+                  "parentUUID": "8bf6de67-f320-4d2f-b188-f3630c029f37",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Existe um elemento com o id `promo`",
+                  "fullTitle": "travel-form 2 - Implemente o conteúdo do formulário `form` Existe um elemento com o id `promo`",
+                  "timedOut": null,
+                  "duration": 10060,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(TRYBE_INPUT_CHECKBOX).should('exist');",
+                  "err": {
+                    "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `input#promo`, but never found it.",
+                    "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `input#promo`, but never found it.\n    at Context.eval (http://localhost:44403/__cypress/tests?p=cypress/integration/project.spec.js:150:36)",
+                    "diff": null
+                  },
+                  "uuid": "566a55a3-2cf0-4cbf-bdbd-e12cf0705dd6",
+                  "parentUUID": "8bf6de67-f320-4d2f-b188-f3630c029f37",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Existe um elemento com o id `agreement`",
+                  "fullTitle": "travel-form 2 - Implemente o conteúdo do formulário `form` Existe um elemento com o id `agreement`",
+                  "timedOut": null,
+                  "duration": 10130,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(TRYBE_TRAVEL_CHECKBOX).should('exist');",
+                  "err": {
+                    "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `input#agreement`, but never found it.",
+                    "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `input#agreement`, but never found it.\n    at Context.eval (http://localhost:44403/__cypress/tests?p=cypress/integration/project.spec.js:153:37)",
+                    "diff": null
+                  },
+                  "uuid": "d1dee7d3-284d-41ca-8957-1f88db86d588",
+                  "parentUUID": "8bf6de67-f320-4d2f-b188-f3630c029f37",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "68902c3a-7c3a-4884-89b5-23efcfe60872",
+                "ccdb82e6-0325-44ae-91a5-bc6813541294",
+                "3f2eab70-1e08-402f-8891-5411fb55e570",
+                "02e31f0b-a30c-444c-a232-6c2511ed87cd",
+                "e06a56e1-90be-4fca-a49f-0338d0e96e49"
+              ],
+              "failures": [
+                "566a55a3-2cf0-4cbf-bdbd-e12cf0705dd6",
+                "d1dee7d3-284d-41ca-8957-1f88db86d588"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 20616,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "28b74831-cdf4-4cfc-8f47-c67b5d0b3119",
+              "title": "3 - Crie botões para o formulário `form`",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Existe um elemento com a tag `button`",
+                  "fullTitle": "travel-form 3 - Crie botões para o formulário `form` Existe um elemento com a tag `button`",
+                  "timedOut": null,
+                  "duration": 10078,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(TRYBE_TRAVEL_SUBMIT_BUTTON).should('exist');",
+                  "err": {
+                    "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `button#submit-btn`, but never found it.",
+                    "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `button#submit-btn`, but never found it.\n    at Context.eval (http://localhost:44403/__cypress/tests?p=cypress/integration/project.spec.js:158:42)",
+                    "diff": null
+                  },
+                  "uuid": "40e56281-dd5f-441c-862e-d5091ed9a22e",
+                  "parentUUID": "28b74831-cdf4-4cfc-8f47-c67b5d0b3119",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Verifica se o texto do botão é \"Enviar\"",
+                  "fullTitle": "travel-form 3 - Crie botões para o formulário `form` Verifica se o texto do botão é \"Enviar\"",
+                  "timedOut": null,
+                  "duration": 10071,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(TRYBE_TRAVEL_SUBMIT_BUTTON).should('have.text', 'Enviar');",
+                  "err": {
+                    "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `button#submit-btn`, but never found it.",
+                    "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `button#submit-btn`, but never found it.\n    at Context.eval (http://localhost:44403/__cypress/tests?p=cypress/integration/project.spec.js:161:42)",
+                    "diff": null
+                  },
+                  "uuid": "3a3fb3f4-f3cd-412d-b254-d870bb1cb3dc",
+                  "parentUUID": "28b74831-cdf4-4cfc-8f47-c67b5d0b3119",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Existe um elemento com o id `submit-btn`",
+                  "fullTitle": "travel-form 3 - Crie botões para o formulário `form` Existe um elemento com o id `submit-btn`",
+                  "timedOut": null,
+                  "duration": 10075,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(TRYBE_TRAVEL_SUBMIT_BUTTON).should('exist');",
+                  "err": {
+                    "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `button#submit-btn`, but never found it.",
+                    "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `button#submit-btn`, but never found it.\n    at Context.eval (http://localhost:44403/__cypress/tests?p=cypress/integration/project.spec.js:164:42)",
+                    "diff": null
+                  },
+                  "uuid": "adfc035b-0385-4c3b-ab24-41dce9d8d1a9",
+                  "parentUUID": "28b74831-cdf4-4cfc-8f47-c67b5d0b3119",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Existe um elemento com o id `clear-btn`",
+                  "fullTitle": "travel-form 3 - Crie botões para o formulário `form` Existe um elemento com o id `clear-btn`",
+                  "timedOut": null,
+                  "duration": 10091,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(TRYBE_TRAVEL_CLEAR_BUTTON).should('exist');",
+                  "err": {
+                    "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `button#clear-btn`, but never found it.",
+                    "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `button#clear-btn`, but never found it.\n    at Context.eval (http://localhost:44403/__cypress/tests?p=cypress/integration/project.spec.js:167:41)",
+                    "diff": null
+                  },
+                  "uuid": "331e4f37-1ec0-4c99-a3ca-9eaa7895890c",
+                  "parentUUID": "28b74831-cdf4-4cfc-8f47-c67b5d0b3119",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [
+                "40e56281-dd5f-441c-862e-d5091ed9a22e",
+                "3a3fb3f4-f3cd-412d-b254-d870bb1cb3dc",
+                "adfc035b-0385-4c3b-ab24-41dce9d8d1a9",
+                "331e4f37-1ec0-4c99-a3ca-9eaa7895890c"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 40315,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "cdd6c48d-90f0-4949-a6c1-d25bc8cbf184",
+              "title": "4 - Manipule as informações via javascript",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Verifica o uso do eventPreventDefault()",
+                  "fullTitle": "travel-form 4 - Manipule as informações via javascript Verifica o uso do eventPreventDefault()",
+                  "timedOut": null,
+                  "duration": 1117,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.window().then(win => {\n  win.document.erro = 'Erro: A página não pode se atualizar ao clicar no botão Enviar.';\n});\ncy.get(TRYBE_TRAVEL_NAME).type('Teste');\ncy.get(TRYBE_TRAVEL_EMAIL).type('teste@gmail.com');\ncy.get(TRYBE_TRAVEL_QUESTION).type('teste');\ncy.get(TRYBE_INPUT_DATE).type('2023-01-30');\ncy.get(TRYBE_INPUT_CHECKBOX).check();\ncy.get(TRYBE_TRAVEL_CHECKBOX).check();\ncy.get(TRYBE_TRAVEL_SUBMIT_BUTTON).click();\ncy.window().then(win => {\n  expect('Erro: A página não pode se atualizar ao clicar no botão Enviar.').to.equal(win.document.erro);\n});",
+                  "err": {
+                    "message": "CypressError: `cy.check()` can only be called on `:checkbox` and `:radio`. Your subject is a: `<input type=\"checkb\" name=\"promo\" id=\"promo\">`\n\nhttps://on.cypress.io/check",
+                    "estack": "CypressError: `cy.check()` can only be called on `:checkbox` and `:radio`. Your subject is a: `<input type=\"checkb\" name=\"promo\" id=\"promo\">`\n\nhttps://on.cypress.io/check\n    at checkOrUncheckEl (http://localhost:44403/__cypress/runner/cypress_runner.js:156181:76)\n    at tryCatcher (http://localhost:44403/__cypress/runner/cypress_runner.js:13022:23)\n    at Object.gotValue (http://localhost:44403/__cypress/runner/cypress_runner.js:12164:18)\n    at Object.gotAccum (http://localhost:44403/__cypress/runner/cypress_runner.js:12153:25)\n    at Object.tryCatcher (http://localhost:44403/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (http://localhost:44403/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (http://localhost:44403/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromiseCtx (http://localhost:44403/__cypress/runner/cypress_runner.js:11051:10)\n    at _drainQueueStep (http://localhost:44403/__cypress/runner/cypress_runner.js:7733:12)\n    at _drainQueue (http://localhost:44403/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:44403/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (http://localhost:44403/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:44403/__cypress/tests?p=cypress/integration/project.spec.js:179:36)",
+                    "diff": null
+                  },
+                  "uuid": "459d95af-06d3-4d63-bef0-2187701fa7d9",
+                  "parentUUID": "cdd6c48d-90f0-4949-a6c1-d25bc8cbf184",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Verifica se ao clicar no botão limpar os campos limpam.",
+                  "fullTitle": "travel-form 4 - Manipule as informações via javascript Verifica se ao clicar no botão limpar os campos limpam.",
+                  "timedOut": null,
+                  "duration": 1155,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(TRYBE_TRAVEL_NAME).type('clear Teste');\ncy.get(TRYBE_TRAVEL_EMAIL).type('teste@gmail.com');\ncy.get(TRYBE_TRAVEL_QUESTION).type('teste');\ncy.get(TRYBE_INPUT_DATE).type('2023-01-30');\ncy.get(TRYBE_INPUT_CHECKBOX).check();\ncy.get(TRYBE_TRAVEL_CHECKBOX).check();\ncy.get(TRYBE_TRAVEL_CLEAR_BUTTON).click();\ncy.get(TRYBE_TRAVEL_NAME).should('have.value', '');",
+                  "err": {
+                    "message": "CypressError: `cy.check()` can only be called on `:checkbox` and `:radio`. Your subject is a: `<input type=\"checkb\" name=\"promo\" id=\"promo\">`\n\nhttps://on.cypress.io/check",
+                    "estack": "CypressError: `cy.check()` can only be called on `:checkbox` and `:radio`. Your subject is a: `<input type=\"checkb\" name=\"promo\" id=\"promo\">`\n\nhttps://on.cypress.io/check\n    at checkOrUncheckEl (http://localhost:44403/__cypress/runner/cypress_runner.js:156181:76)\n    at tryCatcher (http://localhost:44403/__cypress/runner/cypress_runner.js:13022:23)\n    at Object.gotValue (http://localhost:44403/__cypress/runner/cypress_runner.js:12164:18)\n    at Object.gotAccum (http://localhost:44403/__cypress/runner/cypress_runner.js:12153:25)\n    at Object.tryCatcher (http://localhost:44403/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (http://localhost:44403/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (http://localhost:44403/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromiseCtx (http://localhost:44403/__cypress/runner/cypress_runner.js:11051:10)\n    at _drainQueueStep (http://localhost:44403/__cypress/runner/cypress_runner.js:7733:12)\n    at _drainQueue (http://localhost:44403/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:44403/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (http://localhost:44403/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:44403/__cypress/tests?p=cypress/integration/project.spec.js:191:36)",
+                    "diff": null
+                  },
+                  "uuid": "26ff4c0f-26f9-4a1c-8c64-74262734259a",
+                  "parentUUID": "cdd6c48d-90f0-4949-a6c1-d25bc8cbf184",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [
+                "459d95af-06d3-4d63-bef0-2187701fa7d9",
+                "26ff4c0f-26f9-4a1c-8c64-74262734259a"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 2272,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "c0a779fa-a80c-4eee-aa52-c54cbbbeac7c",
+              "title": "5 - Faça a validação de imagem ao clicar no checkbox correspondente.",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Existe um elemento do tipo checkbox com o id `agreement`",
+                  "fullTitle": "travel-form 5 - Faça a validação de imagem ao clicar no checkbox correspondente. Existe um elemento do tipo checkbox com o id `agreement`",
+                  "timedOut": null,
+                  "duration": 10080,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('input#agreement[type=\"checkbox\"]').should('exist');",
+                  "err": {
+                    "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `input#agreement[type=\"checkbox\"]`, but never found it.",
+                    "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `input#agreement[type=\"checkbox\"]`, but never found it.\n    at Context.eval (http://localhost:44403/__cypress/tests?p=cypress/integration/project.spec.js:199:50)",
+                    "diff": null
+                  },
+                  "uuid": "4b8dda40-4372-4110-8c0f-89e9f950542d",
+                  "parentUUID": "c0a779fa-a80c-4eee-aa52-c54cbbbeac7c",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Antes de marcar o campo de confirmação, o botão de Enviar deve estar desabilitado",
+                  "fullTitle": "travel-form 5 - Faça a validação de imagem ao clicar no checkbox correspondente. Antes de marcar o campo de confirmação, o botão de Enviar deve estar desabilitado",
+                  "timedOut": null,
+                  "duration": 10088,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('button#submit-btn').should('be.disabled');",
+                  "err": {
+                    "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `button#submit-btn`, but never found it.",
+                    "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `button#submit-btn`, but never found it.\n    at Context.eval (http://localhost:44403/__cypress/tests?p=cypress/integration/project.spec.js:202:35)",
+                    "diff": null
+                  },
+                  "uuid": "547fea65-9aa4-486e-8d06-5083e1416638",
+                  "parentUUID": "c0a779fa-a80c-4eee-aa52-c54cbbbeac7c",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Ao marcar o campo de confirmação, o botão de Enviar deve ser habilitado",
+                  "fullTitle": "travel-form 5 - Faça a validação de imagem ao clicar no checkbox correspondente. Ao marcar o campo de confirmação, o botão de Enviar deve ser habilitado",
+                  "timedOut": null,
+                  "duration": 10094,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('input#agreement').check();\ncy.get('button#submit-btn').should('not.be.disabled');",
+                  "err": {
+                    "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `input#agreement`, but never found it.",
+                    "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `input#agreement`, but never found it.\n    at Context.eval (http://localhost:44403/__cypress/tests?p=cypress/integration/project.spec.js:205:10)",
+                    "diff": null
+                  },
+                  "uuid": "b67c6184-3091-4302-a58d-16c1b7324a61",
+                  "parentUUID": "c0a779fa-a80c-4eee-aa52-c54cbbbeac7c",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [
+                "4b8dda40-4372-4110-8c0f-89e9f950542d",
+                "547fea65-9aa4-486e-8d06-5083e1416638",
+                "b67c6184-3091-4302-a58d-16c1b7324a61"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 30262,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "672f4caa-a893-484d-a75d-9291d48bc10a",
+              "title": "6 - Faça a validação dos campos do formulário.",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "o input \"Nome Completo\" teve ter no máximo 40 caracteres",
+                  "fullTitle": "travel-form 6 - Faça a validação dos campos do formulário. o input \"Nome Completo\" teve ter no máximo 40 caracteres",
+                  "timedOut": null,
+                  "duration": 742,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(TRYBE_TRAVEL_NAME).type('text'.repeat(10));\ncy.get(TRYBE_TRAVEL_NAME).invoke('val').should(value => {\n  expect(value).to.match(/^[a-z]{40}$/);\n});",
+                  "err": {},
+                  "uuid": "84adf93c-e93a-4b4f-a908-d61b9ff79589",
+                  "parentUUID": "672f4caa-a893-484d-a75d-9291d48bc10a",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "o input \"E-mail\" teve ter no máximo 50 caracteres",
+                  "fullTitle": "travel-form 6 - Faça a validação dos campos do formulário. o input \"E-mail\" teve ter no máximo 50 caracteres",
+                  "timedOut": null,
+                  "duration": 10877,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(TRYBE_TRAVEL_EMAIL).type('text'.repeat(13));\ncy.get(TRYBE_TRAVEL_EMAIL).invoke('val').should(value => {\n  expect(value).to.match(/^[a-z]{50}$/);\n});",
+                  "err": {
+                    "message": "AssertionError: Timed out retrying after 10000ms: expected 'texttexttexttexttexttexttexttexttexttexttexttexttext' to match /^[a-z]{50}$/",
+                    "estack": "AssertionError: Timed out retrying after 10000ms: expected 'texttexttexttexttexttexttexttexttexttexttexttexttext' to match /^[a-z]{50}$/\n    at Context.eval (http://localhost:44403/__cypress/tests?p=cypress/integration/project.spec.js:219:26)",
+                    "diff": null
+                  },
+                  "uuid": "529fc0f0-0db6-44ca-bf8a-f2eda335170d",
+                  "parentUUID": "672f4caa-a893-484d-a75d-9291d48bc10a",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "O textarea deve ter no máximo 500 caracteres",
+                  "fullTitle": "travel-form 6 - Faça a validação dos campos do formulário. O textarea deve ter no máximo 500 caracteres",
+                  "timedOut": null,
+                  "duration": 10298,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(TRYBE_TRAVEL_QUESTION).type('text'.repeat(200));\ncy.get(TRYBE_TRAVEL_QUESTION).invoke('val').should(value => {\n  expect(value).to.match(/^[a-z]{500}$/);\n});",
+                  "err": {},
+                  "uuid": "a8c2f526-d837-4490-a7ed-ee97bdeaae73",
+                  "parentUUID": "672f4caa-a893-484d-a75d-9291d48bc10a",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "84adf93c-e93a-4b4f-a908-d61b9ff79589",
+                "a8c2f526-d837-4490-a7ed-ee97bdeaae73"
+              ],
+              "failures": [
+                "529fc0f0-0db6-44ca-bf8a-f2eda335170d"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 21917,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
