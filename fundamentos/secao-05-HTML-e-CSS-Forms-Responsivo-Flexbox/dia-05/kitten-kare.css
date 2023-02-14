@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  width: 100%;
 }
 
 #container {
@@ -95,17 +96,40 @@ body {
     display: none;
   }
   
-  body {
-    padding: 0;
-  }
-
   #content {
     width: 80%;
     align-items: unset;
   }
   
   #content img {
-    flex: 0 1 150px;
+    flex: 0 1 auto;
     max-width: 400px;
   }
+  
+  #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  #navigation {
+    margin-top: 85px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  #navigation ul{
+    flex-direction: column;
+   
+  }
+
+  #navigation ul li a {
+    border: 0;
+  }
+
+  body {
+    padding: 0;
+  }
+  
 }
