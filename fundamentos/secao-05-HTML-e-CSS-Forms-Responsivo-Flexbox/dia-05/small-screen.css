@@ -1,0 +1,133 @@
+/*
+ * @see http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * apply a natural box layout model to all elements, but allowing components to change
+ */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  margin: 0;
+  box-sizing: inherit;
+}
+img {
+  max-width: 100%;
+}
+figure {
+  margin: 0;
+}
+figcaption {
+  font-size: 0.8em;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: large;
+    margin: 15px;
+  }
+  h1 {
+    font-size: 1.75em;
+  }
+  figure {
+    padding-bottom: 30px;
+    margin: 0;
+  }
+  figcaption {
+    font-size: 0.8em;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: x-large;
+    margin: 20px;
+  }
+  article {
+  }
+  h1 {
+    font-size: 2em;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  section {
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1 2 710px;
+    max-width: 910px;
+  }
+  figure {
+    padding-bottom: 30px;
+    width: auto;
+    margin: 0;
+    flex: 1 20 350px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body {
+    font-size: xx-large;
+    margin: 30px;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  section {
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1 2 910px;
+    max-width: 1360px;
+  }
+  figure {
+    padding-bottom: 30px;
+    width: auto;
+    margin: 0;
+    flex: 1 20 350px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body {
+    font-size: xx-large;
+    margin: 35px;
+    margin-top: 20px;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  section {
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex: 1 2 1360px;
+    max-width: 1520px;
+    max-height: 1200px;
+  }
+  figure {
+    height: 500px;
+    margin: 0;
+    flex: 0 0 auto;
+  }
+}
