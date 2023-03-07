@@ -6,7 +6,7 @@ const flatten = () => {
   arrays.forEach((element, index) => {
     element.reduce((acc, curr) => {
       newArray.push(curr);
-    }, 0)
+    }, 0);
   });
   return newArray;
 };
@@ -75,17 +75,26 @@ const books = [
   },
 ];
 
-const expectedNameResult = "George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.";
+const expectedNameResult =
+  'George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.';
 
-const reduceNames = () => (`${books.reduce((acc, curr) => { acc.push(curr
-  .author
-  .name); return acc; }, []).join(', ')}.`);
-console.log((reduceNames()));
-console.log((reduceNames() === expectedNameResult));
+const reduceNames = () =>
+  `${books
+    .reduce((acc, curr) => {
+      acc.push(curr.author.name);
+      return acc;
+    }, [])
+    .join(', ')}.`;
+console.log(reduceNames());
+console.log(reduceNames() === expectedNameResult);
 
 const expectedAgeResult = 43;
 
-const averageAge = () => (books.reduce((acc, curr) => (acc + (curr.releaseYear - curr.author.birthYear)), 0) / books.length);
+const averageAge = () =>
+  books.reduce(
+    (acc, curr) => acc + (curr.releaseYear - curr.author.birthYear),
+    0
+  ) / books.length;
 console.log(averageAge());
 
 const expectedBookResult = {
@@ -99,8 +108,9 @@ const expectedBookResult = {
   releaseYear: 1991,
 };
 
-const longestNamedBook = () => books.reduce((verifier, curr) => {
-  return verifier.name.length < curr.name.length ? curr : verifier;
-});
+const longestNamedBook = () =>
+  books.reduce((verifier, curr) => {
+    return verifier.name.length < curr.name.length ? curr : verifier;
+  });
 
-console.log((longestNamedBook()));
+console.log(longestNamedBook());
